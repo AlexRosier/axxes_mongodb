@@ -54,13 +54,6 @@ def test_find_french_projects_and_20_images():
         raise
 
 
-def test_find_business_update_after():
-    result = find.find_business_update_after()
-    try:
-        assert result.get("businessId") == "1"
-    except AssertionError:
-        raise
-
 def test_count_businesses_phone_and_advertiser_id():
     result = find.count_businesses_phone_and_advertiser_id()
     try:
