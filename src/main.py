@@ -42,7 +42,7 @@ def find_many(query: str) -> list[str]:
     json_query = _map_to_json(query)
 
     results = list(collection.find(json_query))
-    assert result is not None
+    assert results is not None
     number_of_results = len(results)
     print(f"Number of results : {number_of_results}")
     for result in results:
